@@ -1,0 +1,71 @@
+.header{      
+    height: 100%;
+    width: 100%;
+    background-image: url('../../Assets/images/slider-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+.header-container{      
+    height: 100vh;
+    padding: 0;     
+}
+
+.my-navbar{
+  border-bottom: 2px solid darkorange;
+  height: 12.5vh;   
+  
+
+}
+
+.my-link{
+  margin-left: 2.5vw;
+  font-size: large;
+  color: white;
+  
+
+}
+
+.my-h1{
+  border: 1px solid green;
+  height: 15vh;
+  margin-top: 33vh;
+  
+}
+
+.my-p{
+  border: 1px solid red;
+  height: 5.5vh;
+  margin-top: 4vh;
+  
+  
+}
+
+.my-button{
+  border: 1px solid yellow;
+  height: 6vh;
+  margin-top: 5vh;  
+  
+}
+
+.my-slider{
+  border: 1px solid blue;
+  height: 1vh;
+  margin-top: 8vh;  
+  
+}
+
+/* .header-h1{
+    border: 1px solid red;
+    height: 15vh;    
+    
+}
+
+.header-p{
+  border: 1px solid green;
+  height: 5.5vh;    
+  
+} */
+
