@@ -8,10 +8,8 @@ import slider1 from "../src/Assets/images/slider-1.png";
 function App() {
   return ( 
    <>
-
      <Header  />
      <About />
-
 
      
      

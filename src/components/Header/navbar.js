@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav, Row, Col, Stack } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import "./header-styles.scss";
 import logo from "../../Assets/images/top-logo.png";
 

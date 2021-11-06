@@ -1,8 +1,3 @@
-body{
-    background-color: #1358e0;    
-    color: white;
-    
-    
-}
-
-
+@import "node_modules/sass-google-fonts/src/GoogleFonts.scss";
+@import "custom-bootstrap";
+@import "_default";

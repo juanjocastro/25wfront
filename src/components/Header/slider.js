@@ -6,7 +6,7 @@ export default function Slider () {
   return (
     <Container>
       <Row>
-        <Col lg={1} sm={8} className="my-slider">holaaaf</Col>
+        <Col lg={1} sm={8} className="my-slider"></Col>
       </Row>
     </Container>
   );
