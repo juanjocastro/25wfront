@@ -4,8 +4,7 @@ import logo from "../../Assets/images/top-logo.png";
 
 export default function Navbar_() {
   return (
-    
-      <Container fluid className="fixed-top p-0 header-navbar">
+    <Container fluid className=" p-0 header-navbar">      
         <Navbar collapseOnSelect expand="md" className="p-0 my-navbar">
           <Container className="p-0">
             <Navbar.Brand href="#home">
@@ -13,8 +12,8 @@ export default function Navbar_() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto ">
-                <Nav.Link className="my-link text-white" href="#">Home</Nav.Link>
+              <Nav className="ms-auto d-inline-flex flex-wrap">
+                <Nav.Link className="my-link" href="#">Home</Nav.Link>
                 <Nav.Link className="my-link"  href="#">About</Nav.Link>
                 <Nav.Link className="my-link" href="#">Products</Nav.Link>
                 <Nav.Link className="my-link" href="#">Services</Nav.Link>

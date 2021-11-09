@@ -1,66 +1,85 @@
-.header{         
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../Assets/images/slider-1.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover ;     
+@import "../../Assets/styles/App.scss";
+
+.header {
+  width: 100%;  
+  position: relative;  
 }
 
-.header-container{      
-    height: 100%;
-    padding: 0;  
-       
-    .my-navbar{
-      border-bottom: 2px solid darkorange;
-      min-height: 12.5vh; 
-      
-    
-    }
-    .my-link{
-      margin-left: 2.5vw;
-      font-size: large; 
-      color: red;     
-     
-    }
-    .my-h1{
-      border: 1px solid green;
-      min-height: 15vh;
-      margin-top: 33vh;  
-      padding: 0;
-      color: blue;
-      
-      
-    }
-    
-    .my-p{
-      border: 1px solid red;
-      min-height: 5.5vh;
-      margin-top: 4vh;  
-      padding: 0;
-      font-family: 'roboto';
-      font-weight: 300;
-      font-style: italic;
-      
-     
-    }
-    
-    .my-button{
-      border: 1px solid yellow;
-      min-height: 6vh;
-      margin-top: 5vh;  
-      padding: 0;  
-    }
-    
-    .my-slider{
-      border: 1px solid blue;
-      min-height: 1vh;
-      margin-top: 8vh;  
-      padding: 0;  
-    }
+.my-img-slider {
+  width: 100vw;
+  height: 100vh;  
+  //object-fit: cover; 
 }
 
+.header-container {
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
 
+  .my-navbar {
+    border-bottom: 2px solid darkorange;
+    min-height: 12.5vh;
+    .my-link {
+      margin: 2rem;
+      @include my-text;
+      letter-spacing:0;
+      
+    }
+  }
+  .my-h1 {
+    min-height: 15vh;
+    margin-top: 33vh;
+    padding: 0;
+    width: 105%;
+    color: blue;
+    @include my-h1;
+  
+  }
 
+  .my-p {
+    min-height: 5.5vh;
+    margin-top: 4vh;
+    padding: 0;
+    @include my-text;
+    
+  }
 
+  .my-button {    
+    min-height: 6vh;
+    min-width: 11vw;
+    margin-top: 5vh;
+    padding: 0;
+    background-color: $color-brand;
+    border-radius: 25px;
+    @include my-text;
+    text-align: center;
+    
+    
+  }
 
+  .my-slider {  
+    min-height: 1vh;
+    max-width: 6vw;
+    margin-top: 8vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;    
+
+    .my-bullet{
+      background-color: $color-form;      
+      height: 12px;
+      width: 12px;
+      border-radius: 50px;  
+      cursor: pointer;    
+    }
+    .my-bullet-active{
+      background-color: $color-brand;      
+           
+    }
+  }
+}

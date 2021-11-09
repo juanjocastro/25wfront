@@ -5,8 +5,8 @@ export default function P() {
   return (
     <Container>
       <Row>
-        <Col lg={4} sm={8} className="my-p">
-          <p>
+        <Col xl={4} lg={7} sm={7} className="p-0">
+          <p className="my-p">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque.
           </p>

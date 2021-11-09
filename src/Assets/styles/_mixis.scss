@@ -1,93 +1,59 @@
-/* Google Fonts */
-
-@mixin poppins_semibold {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-    font-family: 'Poppins', sans-serif;
-    
-}
-
-@mixin poppins_medium {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-    font-family: 'Poppins', sans-serif;
-}
-
-@mixin roboto-medium {
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-    font-family: 'Roboto', sans-serif;
-}
-
-@mixin roboto-regular {
-    @import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto&display=swap');
-    font-family: 'Roboto', sans-serif;
-}
-
-
 /* General Styles */
 
-@mixin texto {
-    @include roboto-medium;
-    font-family: 'Roboto', sans-serif;
-    font-size: $font-size16px;
-    text-align: left;
-    letter-spacing: $letter-spac22px;
-    line-height: $line-height21px;
-    color: $color-secondary;
+@mixin my-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: $font-size16px;
+  text-align: left;
+  letter-spacing: $letter-spac22px;
+  line-height: $line-height21px;
+  color: $color-secondary;
 }
 
-
-@mixin texto_home {
-    @include roboto-medium;
-    font-size: $font-size16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: $line-height21px;
-    color: $color-secondary;
+@mixin my-h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: $font-size48px;
+  text-align: left;
+  letter-spacing: $letter-spac67px;
+  line-height: $line-height48px;
+  color: $color-secondary;
 }
 
-@mixin texto_h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: $font-size48px;
-    text-align: left;
-    letter-spacing: $letter-spac67px;
-    line-height: $line-height48px;
-    color: $color-secondary;
+@mixin my-h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: $font-size39px;
+  text-align: left;
+  letter-spacing: $letter-spac55px;
+  line-height: $line-height45px;
+  color: $color-h2;
 }
 
-@mixin texto__section-about {
-    @include texto;
-    @include roboto-regular;
-    color: $color-terciary;
-    line-height: 4.16vh;
-    
+@mixin text-about {
+  @include my-text;
+  font-weight: 400;
+  line-height: $line-height28px;
+  color: $color-h2;
+}
+
+@mixin text-products {
+  @include my-text;
+  font-weight: 400;
+}
+
+@mixin h2-products {
+  @include my-h2;
+  font-weight: 500;
+  line-height: 3.5rem;
+  color: $color-secondary;
 }
 
 @mixin texto__section-services {
-    @include roboto-regular;
-    font-size: $font-size16px;
-    color: $color-form;
-    letter-spacing: $letter-spac22px;
-    line-height: $line-height28px;
-    text-align: left;
-
+  @include roboto-regular;
+  font-size: $font-size16px;
+  color: $color-form;
+  letter-spacing: $letter-spac22px;
+  line-height: $line-height28px;
+  text-align: left;
 }
-
-@mixin h2 {
-    @include poppins_semibold;    
-    font-size: $font-size39px;
-    text-align: left;
-    letter-spacing: $letter-spac55px;
-    line-height: $line-height45px;
-    font-family: 'Poppins', sans-serif;
-}
-
-@mixin h2__section-products {
-    @include poppins_medium;
-    font-size: $font-size39px;
-    text-align: left;
-    letter-spacing: $letter-spac55px;
-    line-height: $line-height59px;
-    color: $color-secondary;
-    font-family: 'Poppins', sans-serif;
-}
-
-

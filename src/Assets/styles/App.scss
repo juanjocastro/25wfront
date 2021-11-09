@@ -1,3 +1,10 @@
 @import "node_modules/sass-google-fonts/src/GoogleFonts.scss";
+@include google-font( 'Fruktur' );
+@include google-font( 'DM Mono', '400,500,500i' );
+@include google-font( 'Roboto');
+@include google-font( 'Poppins');
+
 @import "custom-bootstrap";
 @import "_default";
+@import "_variables";
+@import "_mixis";
