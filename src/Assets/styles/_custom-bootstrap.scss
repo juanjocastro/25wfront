@@ -1,0 +1,20 @@
+/* Bootstrap Custom */
+
+
+$navbar-light-color: green;
+$font-size160px: 1.6rem;
+$primary: $color-brand;
+
+$accordion-button-active-color: shade-color($primary, 10%);
+
+$accordion-icon-active-color: $color-brand;
+$accordion-icon-color: $color-brand;
+
+
+@import "~bootstrap/scss/bootstrap";
+
+
+
+
+
+

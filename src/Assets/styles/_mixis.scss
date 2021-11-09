@@ -49,11 +49,9 @@
   color: $color-secondary;
 }
 
-@mixin texto__section-services {
-  @include roboto-regular;
-  font-size: $font-size16px;
-  color: $color-form;
-  letter-spacing: $letter-spac22px;
+@mixin text-services {
+  @include my-text;
+  font-weight: 400;
   line-height: $line-height28px;
-  text-align: left;
+  color: $color-form;
 }

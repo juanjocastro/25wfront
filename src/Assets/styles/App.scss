@@ -4,7 +4,7 @@
 @include google-font( 'Roboto');
 @include google-font( 'Poppins');
 
-@import "custom-bootstrap";
 @import "_default";
 @import "_variables";
+@import "_custom-bootstrap";
 @import "_mixis";
