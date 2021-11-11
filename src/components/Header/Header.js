@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap";
-import "../../Assets/styles/_header-styles.scss";
 import imagen from "../../Assets/images/slider-1.png";
 import Navbar_ from "./navbar";
 import H1_ from "./h1";
@@ -10,9 +9,9 @@ import Slider from "./slider";
 
 export default () => {
   return (
-    <header className="header">      
+    <header id="header" className="header">      
         <img src={imagen} className="my-img-slider"/>
-        <Container className="header-container">
+        <Container id="home" className="header-container">
           <Navbar_ />
           <H1_ />
           <P />

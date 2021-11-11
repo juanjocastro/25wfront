@@ -5,7 +5,7 @@ import leftArrow from "../../Assets/images/arrow-left-circle.png";
 
 export default () => {
   return (
-    <div className="products">
+    <div id="products" className="products">
       <Container className="my-container-products">
         <Col xl={10} lg={10} sm={10} className="my-img-products">
           <Col xl={6} lg={6} sm={8} className="my-slider-products">

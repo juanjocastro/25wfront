@@ -1,11 +1,10 @@
 import { Container, Form, FloatingLabel } from "react-bootstrap";
 import "../../Assets/styles/_contact-styles.scss";
-
 import Button from "../common/Button";
 
 export default () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <Container className="my-container-contact">
         <div className="my-container__h2-form">
           <h2 class="contact-h2">
@@ -41,7 +40,7 @@ export default () => {
               <Form.Control
                 as="textarea"
                 placeholder="###"
-                style={{ height: "10rem", paddingTop:"2rem" }}
+                style={{ height: "10rem", paddingTop: "2rem" }}
               />
             </FloatingLabel>
 
@@ -56,54 +55,3 @@ export default () => {
   );
 };
 
-<section class="main__section-contact" id="contact">
-  <div class="section-contact__container">
-    <div class="section-contact__form">
-      <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label for="floatingInput">Name</label>
-      </div>
-
-      <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label for="floatingInput">Email</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control"
-          id="floatingInput"
-          placeholder="name@example.com"
-        />
-        <label for="floatingInput">Phone</label>
-      </div>
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea"
-        ></textarea>
-        <label for="floatingTextarea">Message</label>
-      </div>
-      <a href="#" id="boton2">
-        Send
-      </a>
-    </div>
-
-    <div class="section-contact__img"></div>
-
-    <h2 class="section-contact__h2">
-      Get in touch<span> We are hiring!</span>
-    </h2>
-  </div>
-</section>;

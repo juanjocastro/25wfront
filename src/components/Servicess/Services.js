@@ -4,7 +4,7 @@ import nun from "../../Assets/images/section4-image.png";
 
 export default () => {
   return (
-    <div className="services">
+    <div id="services" className="services">
       <img src={nun} className="my-img-services" />
       <Container className="my-container-services">
         <Col xl={7} lg={7} sm={7} className="my-accordion">

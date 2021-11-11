@@ -1,29 +1,62 @@
+import { useState, useRef, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import "../../Assets/styles/_header-styles.scss";
 import logo from "../../Assets/images/top-logo.png";
 
-export default function Navbar_() {
-  return (
-    <Container fluid className=" p-0 header-navbar">      
-        <Navbar collapseOnSelect expand="md" className="p-0 my-navbar">
-          <Container className="p-0">
-            <Navbar.Brand href="#home">
-              <img src={logo} id="top-logo" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto d-inline-flex flex-wrap">
-                <Nav.Link className="my-link" href="#">Home</Nav.Link>
-                <Nav.Link className="my-link"  href="#">About</Nav.Link>
-                <Nav.Link className="my-link" href="#">Products</Nav.Link>
-                <Nav.Link className="my-link" href="#">Services</Nav.Link>
-                <Nav.Link className="my-link" href="#">Contact</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </Container>
-    
-  );
-};
 
+export default function Navbar_() {
+ 
+  /* Navbar cambia style cuando window.scrollY supera los 90px */
+
+  const [navbarScrollBg, setNavbarScrollBg] = useState(false);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 90) {
+      setNavbarScrollBg(true);
+    } else {
+      setNavbarScrollBg(false);
+    }
+  };
+   useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, []);   
+  
+
+  return (
+    <Container fluid className="fixed-top">
+      <Navbar
+        collapseOnSelect
+        expand="md"
+        className={`my-navbar ${navbarScrollBg && "my-bg"}`}
+      >
+        <Container>
+          <Navbar.Brand href="#home">
+            <img src={logo} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto d-inline-flex flex-wrap">
+              <Nav.Link className="my-link" href="#home">
+                Home
+              </Nav.Link>
+              <Nav.Link className="my-link" href="#about">
+                About
+              </Nav.Link>
+              <Nav.Link className="my-link" href="#products">
+                Products
+              </Nav.Link>
+              <Nav.Link className="my-link" href="#services">
+                Services
+              </Nav.Link>
+              <Nav.Link className="my-link" href="#contact">
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Container>
+  );
+}

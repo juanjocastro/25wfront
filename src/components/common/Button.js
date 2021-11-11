@@ -1,5 +1,5 @@
 import { Container, Col } from "react-bootstrap";
-import "../../Assets/styles/_header-styles.scss";
+import "../../Assets/styles/_button.scss";
 
 export default function Button() {
   return (
