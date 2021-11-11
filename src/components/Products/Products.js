@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import "./products-styles.scss";
+import "../../Assets/styles/_products-styles.scss";
 import rightArrow from "../../Assets/images/arrow-right-circle.png";
 import leftArrow from "../../Assets/images/arrow-left-circle.png";
 

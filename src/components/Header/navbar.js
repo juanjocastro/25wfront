@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import "./header-styles.scss";
+import "../../Assets/styles/_header-styles.scss";
 import logo from "../../Assets/images/top-logo.png";
 
 export default function Navbar_() {

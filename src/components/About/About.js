@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import "./about-styles.scss";
+import "../../Assets/styles/_about-styles.scss";
 import nun from "../../Assets/images/section3-image.png";
 
 export default () => {

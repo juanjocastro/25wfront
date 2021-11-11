@@ -1,5 +1,5 @@
 import { Col, Container, Accordion } from "react-bootstrap";
-import "./services-styles.scss";
+import "../../Assets/styles/_services-styles.scss";
 import nun from "../../Assets/images/section4-image.png";
 
 export default () => {
@@ -20,7 +20,7 @@ export default () => {
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Ut enim ad minima veniam</Accordion.Header>
+              <Accordion.Header >Ut enim ad minima veniam</Accordion.Header>
               <Accordion.Body className="p-4 m-2 accordion-text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
