@@ -3,13 +3,22 @@
 
 .header {
   width: 100%;
-  position: relative;
 }
 
 .my-img-slider {
   width: 100vw;
   height: 100vh;
-  //object-fit: cover;
+  opacity: 1;
+  transition: opacity ease-in-out 0.4s;
+  
+  .my-image {
+    width: 100%;
+    height: 100%;
+    //object-fit: cover;
+  }
+  .active {
+    opacity: 1;
+  }
 }
 
 .header-container {
@@ -21,11 +30,9 @@
   right: 0;
   bottom: 0;
 
-
-
   .my-navbar {
     border-bottom: 1px solid $color-brand;
-    height: 12.5vh;    
+    height: 12.5vh;
     transition-timing-function: ease-in;
     transition: 0.5s;
 
@@ -36,11 +43,10 @@
     }
   }
 
-  .my-bg{    
+  .my-bg {
     height: 9vh;
     background-color: $color-form;
     border-bottom: 0;
-    
   }
 
   .my-h1 {
@@ -62,25 +68,69 @@
     @include my-text;
   }
 
-
-
   .my-slider {
     min-height: 1vh;
-    max-width: 6vw;
+    max-width: 10vw;
     margin-top: 8vh;
-    padding: 0;
     display: flex;
     justify-content: space-between;
 
     .my-bullet {
       background-color: $color-form;
-      height: 12px;
-      width: 12px;
+      height: 15px;
+      width: 15px;
+      border: 1px solid orange;
       border-radius: 50px;
       cursor: pointer;
     }
-    .my-bullet-active {
-      background-color: $color-brand;
-    }
   }
 }
+
+
+
+.slide {
+  width: 100%;
+  height: 100%;
+  //position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  //object-fit: cover;
+}
+.active-anim {
+  opacity: 1;
+}
+
+.btn-slide {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  //position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-slide img {
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+.prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+
+

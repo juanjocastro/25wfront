@@ -1,7 +1,9 @@
+import { Container } from "react-bootstrap";
+
 export default () => {
   return (
-    <div id="about" className="about">
-      <div className="my-container-about">
+    <Container fluid id="about" className="about">
+      <Container fluid className="my-container-about">
         <h2 className="my-h2">
           We Help Businesses <span>Grow and Innovate</span>
         </h2>
@@ -19,8 +21,8 @@ export default () => {
           amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
           invidunt ut
         </p>
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 };
 

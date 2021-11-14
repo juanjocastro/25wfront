@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../../Assets/images/top-logo.png";
 
