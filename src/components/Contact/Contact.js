@@ -94,7 +94,7 @@ export default () => {
         const response = await axios.post(
           /* "https://jsonplaceholder.typicode.com/posts", */
          /*  "http://127.0.0.1:8000/api/saveUsuarios", */
-          "https://proyecto-25w.herokuapp.com/public/api/saveUsuarios", 
+          "https://proyecto-25w.herokuapp.com/api/saveUsuarios", 
           
           formData
         );
