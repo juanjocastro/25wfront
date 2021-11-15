@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./mixis";
+@import "../../../custom/custom-bootstrap";
 
 .contact {
   border: 0.1px solid rgb(221, 219, 219);
@@ -95,35 +96,10 @@
   color: $color-form;
 }
 
-/* 
 
 
+.prueba{  
+  border-bottom: 2px solid red;
+  box-shadow: 4px 0.5px 10px 1px rgb(187, 187, 187);;
+} 
 
-
-.section-contact__h2 {
-  @include h2;
-  color: #343434;
-  grid-area: 1 / 1 / 1 / 5;
-  margin-right: 6.36vw;
-  margin-top: 15.6vh;
-     
-      & span {
-          @include h2;
-          color: $color-brand;
-                     
-      } 
-}
-
-#boton2 {
-  @include texto;
-  @include roboto-medium;
-  width: 10.54vw;
-  height: 6.25vh;
-  background-color: $color-brand;
-  border-radius: 25px;
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-} */

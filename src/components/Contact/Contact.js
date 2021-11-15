@@ -9,6 +9,7 @@ import FormContact from "./Form-Contact";
 export default () => {
   const [statusSend, setStatusSend] = useState(0)
   const [activeMsj, setActiveMsj] = useState(false)
+  const [nameValid, setNameValid] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,9 +20,17 @@ export default () => {
   const handleChange = (event) => {
     const clave = event.target.name;
     const valor = event.target.value;
-
+    
     setFormData({ ...formData, [clave]: valor });
   };
+
+  const formValidation = () =>{
+    const name = formData.name.toLocaleLowerCase().trim()
+    console.log(name)
+    
+  }
+  
+  formValidation()
 
   const formToggle = () => {
     setActiveMsj(false);
@@ -29,6 +38,8 @@ export default () => {
 
   const handleSubmit = () => {
     setActiveMsj(true)
+    
+
     const sendData = async () => {
       try {
         const response = await axios.post(

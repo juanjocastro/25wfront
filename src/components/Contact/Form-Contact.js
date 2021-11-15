@@ -1,4 +1,4 @@
-import { Container, Form, FloatingLabel } from "react-bootstrap";
+import { Form, FloatingLabel, Container } from "react-bootstrap";
 import "../../Assets/styles/_contact-styles.scss";
 import Button from "../common/Button";
 
@@ -12,31 +12,39 @@ export default ({ onClick, onChange }) => {
         <FloatingLabel
           controlId="floating-inp"
           label="Name"
-          className="tt mb-4"
+          className="tt mb-4 "
         >
           <Form.Control
+           className={"prueba"}
             type="text"
             placeholder="###"
             name="name"
             onChange={onChange}
+            autocomplete="off"
           />
         </FloatingLabel>
+
         <FloatingLabel controlId="floating-inp" label="Email" className="mb-4">
           <Form.Control
             type="email"
             placeholder="###"
             name="email"
             onChange={onChange}
+            autocomplete="off"
+            
           />
         </FloatingLabel>
+
         <FloatingLabel controlId="floating-inp" label="Phone" className="mb-4">
           <Form.Control
             type="phone"
             placeholder="###"
             name="phone"
             onChange={onChange}
+            autocomplete="off"
           />
         </FloatingLabel>
+
         <FloatingLabel
           controlId="floating-inp"
           label="Message"
@@ -48,6 +56,7 @@ export default ({ onClick, onChange }) => {
             style={{ height: "10rem", paddingTop: "2rem" }}
             name="message"
             onChange={onChange}
+            autocomplete="off"
           />
         </FloatingLabel>
 

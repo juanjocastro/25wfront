@@ -11,14 +11,13 @@ $accordion-icon-color: $color-brand;
 $accordion-icon-active-color: $color-brand;
 
 $container-padding-x: 0;
-
 $form-floating-height: 5rem;
+
+$input-focus-border-color: 1px solid rgba(182, 182, 182, 0.746);
+$input-focus-color: rgb(182, 182, 182);
+$input-focus-bg: rgb(255, 255, 255);
+$component-active-bg: rgb(0, 0, 0);
+
 
 
 @import "~bootstrap/scss/bootstrap.scss";
-
-
-
-
-
-

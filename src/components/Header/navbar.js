@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../../Assets/images/top-logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
+export default () =>{
 
-export default function Navbar_() {
- 
   /* Navbar cambia style cuando window.scrollY supera los 90px */
 
   const [navbarScrollBg, setNavbarScrollBg] = useState(false);
@@ -16,13 +16,12 @@ export default function Navbar_() {
       setNavbarScrollBg(false);
     }
   };
-   useEffect(() => {
+  useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, []);   
-  
+  }, []);
 
   return (
     <Container fluid className="fixed-top">
@@ -32,27 +31,35 @@ export default function Navbar_() {
         className={`my-navbar ${navbarScrollBg && "my-bg"}`}
       >
         <Container>
-          <Navbar.Brand href="#home">
-            <img src={logo} />
+          <Navbar.Brand >
+            <Link to="home">
+              <img src={logo} />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto d-inline-flex flex-wrap">
-              <Nav.Link className="my-link" href="#home">
-                Home
-              </Nav.Link>
-              <Nav.Link className="my-link" href="#about">
-                About
-              </Nav.Link>
-              <Nav.Link className="my-link" href="#products">
-                Products
-              </Nav.Link>
-              <Nav.Link className="my-link" href="#services">
-                Services
-              </Nav.Link>
-              <Nav.Link className="my-link" href="#contact">
-                Contact
-              </Nav.Link>
+              <Link to="home" smooth="easeOutCirc" duration={500}>
+                <Nav.Link className="my-link">Home</Nav.Link>
+              </Link>
+              <Link to="about" smooth="easeInBack" duration={500}>
+                <Nav.Link className="my-link">About</Nav.Link>
+              </Link>
+              <Link to="products" smooth="easeOutCirc" duration={500}>
+                <Nav.Link className="my-link" >
+                  Products
+                </Nav.Link>
+              </Link>
+              <Link to="services" smooth="easeOutCirc" duration={500}>
+                <Nav.Link className="my-link" >
+                  Services
+                </Nav.Link>
+              </Link>
+              <Link to="contact" smooth={true} duration={500}>
+                <Nav.Link className="my-link" >
+                  Contact
+                </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
