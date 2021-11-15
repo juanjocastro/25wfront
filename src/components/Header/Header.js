@@ -26,8 +26,8 @@ export default () => {
         <Navbar_ />
         <H1_ />
         <P />
-        <Button />
-        <ControllSlide onClick={changeDot}/>
+        <Button valor="Read More" />
+        <ControllSlide imgIndex={imgIndex} onClick={changeDot}/>
       </Container>
     </header>
   );

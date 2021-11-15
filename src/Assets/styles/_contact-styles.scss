@@ -96,10 +96,14 @@
   color: $color-form;
 }
 
-
-
-.prueba{  
-  border-bottom: 2px solid red;
+.sin-borde-rojo{  
+  //border-bottom: 2px solid red;
   box-shadow: 4px 0.5px 10px 1px rgb(187, 187, 187);;
+  .con-borde-rojo{  
+    border-bottom: 2px solid red;
+    box-shadow: 4px 0.5px 10px 1px rgb(187, 187, 187);;
+  } 
 } 
+
+
 

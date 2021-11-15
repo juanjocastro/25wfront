@@ -2,7 +2,7 @@ import { Form, FloatingLabel, Container } from "react-bootstrap";
 import "../../Assets/styles/_contact-styles.scss";
 import Button from "../common/Button";
 
-export default ({ onClick, onChange }) => {
+export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, onClick,  nameValid, emailValid, phoneValid, messageValid, valor }) => {
   return (
     <div className="my-container__h2-form">
       <h2 class="contact-h2">
@@ -15,11 +15,11 @@ export default ({ onClick, onChange }) => {
           className="tt mb-4 "
         >
           <Form.Control
-           className={"prueba"}
+           
             type="text"
             placeholder="###"
             name="name"
-            onChange={onChange}
+            onChange={onChangeName}
             autocomplete="off"
           />
         </FloatingLabel>
@@ -29,7 +29,7 @@ export default ({ onClick, onChange }) => {
             type="email"
             placeholder="###"
             name="email"
-            onChange={onChange}
+            onChange={onChangeEmail}
             autocomplete="off"
             
           />
@@ -40,7 +40,7 @@ export default ({ onClick, onChange }) => {
             type="phone"
             placeholder="###"
             name="phone"
-            onChange={onChange}
+            onChange={onChangePhone}
             autocomplete="off"
           />
         </FloatingLabel>
@@ -55,13 +55,13 @@ export default ({ onClick, onChange }) => {
             placeholder="###"
             style={{ height: "10rem", paddingTop: "2rem" }}
             name="message"
-            onChange={onChange}
+            onChange={onChangeMessage}
             autocomplete="off"
           />
         </FloatingLabel>
 
         <Container className="container-button">
-          <Button onClick={onClick} />
+          <Button type="submit" onClick={onClick} />
         </Container>
       </div>
     </div>
