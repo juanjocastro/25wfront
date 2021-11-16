@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 
 export default function Slider({ imgIndex }) {
   const miArr = [imagen1, imagen2, imagen3];
-//console.log(imgIndex)
+
   return (
     <Container fluid className="my-img-slider"  >
       <img src={miArr[imgIndex]} className="my-image" />

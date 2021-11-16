@@ -1,13 +1,19 @@
 import { Form, FloatingLabel, Container } from "react-bootstrap";
-import "../../Assets/styles/_contact-styles.scss";
+import "../../Assets/styles/_contact.scss";
 import Button from "../common/Button";
 
-export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, onClick,  nameValid, emailValid, phoneValid, messageValid, valor }) => {
-
-
-  console.log(nameValid, emailValid, phoneValid, messageValid);
-
-
+export default ({
+  onChangeName,
+  onChangeEmail,
+  onChangePhone,
+  onChangeMessage,
+  onClick,
+  nameValid,
+  emailValid,
+  phoneValid,
+  messageValid,
+  valor,
+}) => {
   return (
     <div className="my-container__h2-form">
       <h2 class="contact-h2">
@@ -20,7 +26,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
           className="tt mb-4 "
         >
           <Form.Control
-           className={nameValid ? "borde-verde" : "borde-rojo"}
+            className={nameValid ? "borde-verde" : "borde-rojo"}
             type="text"
             placeholder="###"
             name="name"
@@ -31,19 +37,18 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
 
         <FloatingLabel controlId="floating-inp" label="Email" className="mb-4">
           <Form.Control
-          className={emailValid ? "borde-verde" : "borde-rojo"}
+            className={emailValid ? "borde-verde" : "borde-rojo"}
             type="email"
             placeholder="###"
             name="email"
             onChange={onChangeEmail}
             autocomplete="off"
-            
           />
         </FloatingLabel>
 
         <FloatingLabel controlId="floating-inp" label="Phone" className="mb-4">
           <Form.Control
-          className={phoneValid ? "borde-verde" : "borde-rojo"}
+            className={phoneValid ? "borde-verde" : "borde-rojo"}
             type="phone"
             placeholder="###"
             name="phone"
@@ -58,7 +63,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
           className="mb-4"
         >
           <Form.Control
-          className={messageValid ? "borde-verde" : "borde-rojo"}
+            className={messageValid ? "borde-verde" : "borde-rojo"}
             as="textarea"
             placeholder="###"
             style={{ height: "10rem", paddingTop: "2rem" }}
@@ -69,7 +74,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
         </FloatingLabel>
 
         <Container className="container-button">
-          <Button type="submit" onClick={onClick} />
+          <Button type="submit" onClick={onClick} valor={valor} />
         </Container>
       </div>
     </div>

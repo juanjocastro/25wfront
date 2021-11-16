@@ -69,12 +69,12 @@
   width: 50%;
   align-self: center;
 }
-.vv {
+.parrafo-satisfactorio {
   @include my-text;
   color: $color-brand;
 }
 
-.vvrr {
+.boton-close {
   @include my-text;
   opacity: 0.5;
   color: $color-form;
@@ -98,15 +98,8 @@
 
 .borde-rojo {
   border: 1px solid red;
-  
-  $input-focus-border-color: 1px solid rgba(170, 9, 9, 0.746);
-  $input-focus-color: rgb(151, 81, 81);
-  $input-focus-bg: rgb(110, 55, 55);
-  $component-active-bg: rgb(160, 101, 101);  
 }
 
 .borde-verde {
   border: 1px solid green;
-  
-  
 }

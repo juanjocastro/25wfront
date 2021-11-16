@@ -1,18 +1,16 @@
 @import "node_modules/sass-google-fonts/src/GoogleFonts.scss";
-@include google-font( 'Roboto');
-@include google-font( 'Poppins');
+@include google-font("Roboto");
+@include google-font("Poppins");
 
 @import "_default";
 @import "_variables";
 @import "_mixis";
 @import "../../../custom/custom-bootstrap";
 
-
 @import "_button";
 @import "_header-styles";
-@import "_slider";
 @import "_about";
 @import "_products-styles";
 @import "_services-styles";
-@import "_contact-styles";
+@import "_contact";
 @import "_footer";

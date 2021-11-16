@@ -4,11 +4,11 @@ export default () => {
   return (
     <Container fluid id="about" className="about">
       <Container fluid className="my-container-about">
-        <h2 className="my-h2">
+        <h2 className="my-h2-about">
           We Help Businesses <span>Grow and Innovate</span>
         </h2>
 
-        <p className="my-paragraph">
+        <p className="my-paragraph-about">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea

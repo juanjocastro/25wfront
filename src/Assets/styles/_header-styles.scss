@@ -7,8 +7,7 @@
 
 .my-img-slider {
   width: 100vw;
-  height: 100vh;
-  opacity: 1;
+  height: 100vh;  
   transition: opacity ease-in-out 0.4s;
   
   .my-image {
@@ -16,9 +15,7 @@
     height: 100%;
     //object-fit: cover;
   }
-  .active {
-    opacity: 1;
-  }
+  
 }
 
 .header-container {
