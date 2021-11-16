@@ -18,6 +18,18 @@ $input-focus-color: rgb(182, 182, 182);
 $input-focus-bg: rgb(255, 255, 255);
 $component-active-bg: rgb(0, 0, 0);
 
+@mixin focoRed {
+  $input-focus-border-color: 1px solid rgba(170, 9, 9, 0.746);
+  $input-focus-color: rgb(151, 81, 81);
+  $input-focus-bg: rgb(110, 55, 55);
+  $component-active-bg: rgb(160, 101, 101);
+}
 
+@mixin focoGreen {
+  $input-focus-border-color: 1px solid rgba(76, 170, 21, 0.746);
+  $input-focus-color: rgb(106, 153, 61);
+  $input-focus-bg: rgb(97, 156, 49);
+  $component-active-bg: rgb(96, 153, 49);
+}
 
 @import "~bootstrap/scss/bootstrap.scss";

@@ -1,7 +1,7 @@
 
 import { Alert, Button } from "react-bootstrap";
 
-export default ({ onClick, status }) => {
+export default ({ onClick, status}) => {
   
 
   return (    
@@ -36,7 +36,7 @@ export default ({ onClick, status }) => {
         >
           <Alert.Heading>Mensaje Enviado Correctamente!</Alert.Heading>
           <p className="vv">Gracias Por Comunicarte Con Nosotros</p>
-          <Button variant="light" className="vvrr">
+          <Button variant="light" className="vvrr" >
             Close
           </Button>
         </Alert>

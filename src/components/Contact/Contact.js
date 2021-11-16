@@ -28,7 +28,7 @@ export default () => {
     const resName = regexName.test(name);  
     console.log(name.length)  
     
-    resName && name.length > 0 && name.length < 12  ? setNameValid(true) : setNameValid(false);   
+    resName && name.length > 0 && name.length < 16  ? setNameValid(true) : setNameValid(false);   
     
     setFormData({ ...formData, name });   
   };
@@ -52,9 +52,10 @@ export default () => {
     const regexPhone = RegExp(/^[0-9]+$/);
     const resPhone = regexPhone.test(phone);   
     console.log(resPhone) 
+
+    resPhone && phone.length > 6 && phone.length < 12  ? setPhoneValid(true) : setPhoneValid(false);
     
-    resPhone ? setPhoneValid(true) : setPhoneValid(false);   
-    
+       
     setFormData({ ...formData, phone });   
   };
 
@@ -71,13 +72,6 @@ export default () => {
   };
 
 
-  const prueba = () => {    
-
-             
-    console.log(nameValid)
-    
-   
-  };
 
   
   const formToggle = () => {
@@ -85,6 +79,7 @@ export default () => {
   };
 
   const handleSubmit = () => {
+    
     if(nameValid && emailValid && phoneValid && messageValid){
 
       setActiveMsj(true);      
@@ -93,8 +88,8 @@ export default () => {
       try {
         const response = await axios.post(
           /* "https://jsonplaceholder.typicode.com/posts", */
-         /*  "http://127.0.0.1:8000/api/saveUsuarios", */
-          "https://proyecto-25w.herokuapp.com/api/SaveUsuarios", 
+          "http://127.0.0.1:8000/api/saveUsuarios",
+          /* "https://proyecto-25w.herokuapp.com/api/SaveUsuarios", */ 
           
           formData
         );
@@ -113,7 +108,10 @@ export default () => {
       message: "",
     }); 
 
-    }else{
+    setNameValid(false)
+    setEmailValid(false)
+    setPhoneValid(false)
+    setMessageValid(false)
 
     }
   };
@@ -135,9 +133,10 @@ export default () => {
             phoneValid={phoneValid}
             messageValid={messageValid}
             valor="Send"
+           
           />
         ) :  (
-          <MensajeForm onClick={formToggle} status={statusSend} />
+          <MensajeForm onClick={formToggle}  status={statusSend} />
         )}
         <div class="contact-img"></div>
       </Container>

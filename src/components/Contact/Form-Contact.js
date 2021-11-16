@@ -3,6 +3,11 @@ import "../../Assets/styles/_contact-styles.scss";
 import Button from "../common/Button";
 
 export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, onClick,  nameValid, emailValid, phoneValid, messageValid, valor }) => {
+
+
+  console.log(nameValid, emailValid, phoneValid, messageValid);
+
+
   return (
     <div className="my-container__h2-form">
       <h2 class="contact-h2">
@@ -15,7 +20,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
           className="tt mb-4 "
         >
           <Form.Control
-           
+           className={nameValid ? "borde-verde" : "borde-rojo"}
             type="text"
             placeholder="###"
             name="name"
@@ -26,6 +31,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
 
         <FloatingLabel controlId="floating-inp" label="Email" className="mb-4">
           <Form.Control
+          className={emailValid ? "borde-verde" : "borde-rojo"}
             type="email"
             placeholder="###"
             name="email"
@@ -37,6 +43,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
 
         <FloatingLabel controlId="floating-inp" label="Phone" className="mb-4">
           <Form.Control
+          className={phoneValid ? "borde-verde" : "borde-rojo"}
             type="phone"
             placeholder="###"
             name="phone"
@@ -51,6 +58,7 @@ export default ({ onChangeName, onChangeEmail, onChangePhone, onChangeMessage, o
           className="mb-4"
         >
           <Form.Control
+          className={messageValid ? "borde-verde" : "borde-rojo"}
             as="textarea"
             placeholder="###"
             style={{ height: "10rem", paddingTop: "2rem" }}
