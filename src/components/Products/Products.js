@@ -3,7 +3,7 @@ import "../../Assets/styles/_products-styles.scss";
 import imgRightArrow from "../../Assets/images/arrow-right-circle.png";
 import imgLeftArrow from "../../Assets/images/arrow-left-circle.png";
 import imgNike from "../../Assets/images/nikelogo.png";
-import imgAdidas from "../../Assets/images/adidas.png";
+import imgAdidas from "../../Assets/images/adidaslogo.png";
 import { useState } from "react";
 
 export default () => {
