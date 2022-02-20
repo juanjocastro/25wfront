@@ -12,7 +12,7 @@ export default () => {
     if (slideArrow === -1) {
       setSlideArrow(1);
     } else {
-      setSlideArrow(slideArrow - 1);
+      setSlideArrow(slideArrow + 1);
     }
   };
 
@@ -20,7 +20,7 @@ export default () => {
     if (slideArrow === 1) {
       setSlideArrow(-1);
     } else {
-      setSlideArrow(slideArrow + 1);
+      setSlideArrow(slideArrow - 1);
     }
   };
 
@@ -66,10 +66,10 @@ export default () => {
           <Col xl={6} lg={6} sm={8} className="my-slider-products">
             <div className="products-content">
               <h3 className="products-subtitle">Producto 2</h3>
-              <h2 className="products-h2">(Scroll2)</h2>
+              <h2 className="products-h2">(Scroll 2)</h2>
 
               <img src={imgGithub} className="imgSlider" />
-              <a className="products-p" href="https://www.google.com">
+              <a className="products-p" href="https://www.google.com" target="_blank" >
                 https://www.google.com
               </a>
 
