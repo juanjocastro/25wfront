@@ -65,12 +65,12 @@ export default () => {
         <Col xl={10} lg={10} sm={10} className="my-img-products">
           <Col xl={6} lg={6} sm={8} className="my-slider-products">
             <div className="products-content">
-              <h3 className="products-subtitle">Valentina</h3>
-              <h2 className="products-h2"> Martinez</h2>
+              <h3 className="products-subtitle">Producto 2</h3>
+              <h2 className="products-h2">(Scroll2)</h2>
 
               <img src={imgGithub} className="imgSlider" />
-              <a className="products-p" href="https://example.com">
-                https://github.com/valentina111319
+              <a className="products-p" href="https://www.google.com">
+                https://www.google.com
               </a>
 
               <div className="products-arrows">
@@ -100,12 +100,12 @@ export default () => {
         <Col xl={10} lg={10} sm={10} className="my-img-products">
           <Col xl={6} lg={6} sm={8} className="my-slider-products">
             <div className="products-content">
-              <h3 className="products-subtitle">Franco</h3>
-              <h2 className="products-h2"> Storero</h2>
+              <h3 className="products-subtitle">Producto 3</h3>
+              <h2 className="products-h2">(Scroll 3)</h2>
 
               <img src={imgGithub} className="imgSlider" />
-              <a className="products-p" href="https://example.com">
-                https://github.com/FrancoStorero
+              <a className="products-p" href="https://www.google.com">
+                https://www.google.com
               </a>
 
               <div className="products-arrows">
