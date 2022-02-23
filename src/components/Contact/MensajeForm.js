@@ -17,6 +17,7 @@ export default ({ onClick, status}) => {
           onClick={onClick}
           
         >
+          <Alert.Heading>status</Alert.Heading>
           <Alert.Heading>El mensaje NO se pudo enviar</Alert.Heading>
           <p ></p>
          
