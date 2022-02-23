@@ -84,6 +84,9 @@ export default () => {
 
       setActiveMsj(true);
 
+
+      dd('estoy en contact.js') 
+
       const sendData = async () => {
 
         /* "https://jsonplaceholder.typicode.com/posts", */
