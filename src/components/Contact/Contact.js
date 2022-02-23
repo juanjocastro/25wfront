@@ -85,12 +85,14 @@ export default () => {
       setActiveMsj(true);
 
       const sendData = async () => {
+
+        /* "https://jsonplaceholder.typicode.com/posts", */
+        /* "http://127.0.0.1:8000/api/saveUsuarios", */
+        /* "https://proyecto-25w.herokuapp.com/api/saveUsuarios", */
+	      /*"https://laravel-api-jj.herokuapp.com/api/",*/
+
         try {
           const response = await axios.post(
-            /* "https://jsonplaceholder.typicode.com/posts", */
-            /* "http://127.0.0.1:8000/api/saveUsuarios", */
-            /* "https://proyecto-25w.herokuapp.com/api/saveUsuarios", */
-	    /*"https://laravel-api-jj.herokuapp.com/api/",*/
             "https://my25wback-api.herokuapp.com/api/saveUsuarios",
             formData
           );
